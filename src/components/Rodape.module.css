@@ -1,0 +1,97 @@
+.footer {
+    width: 100vw; /* Mantém o rodapé esticado pela largura da tela */
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Inclui o padding dentro da largura total */
+    margin-left: calc(-50vw + 50%); /* Ajuste para garantir que o rodapé "puxe" para a esquerda */
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas de tamanho igual */
+    width: 100%; /* O container deve ocupar toda a largura possível */
+    max-width: 1200px; /* Define um limite máximo de largura */
+    padding: 0 20px;
+    margin: 0; /* Remove qualquer margem extra */
+}
+
+.social {
+    justify-self: start; /* Alinha a seção de ícones à esquerda */
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+.icon:hover {
+    color: #4B0082; /* Cor de destaque ao passar o mouse */
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu p {
+    margin: 5px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #4B0082;
+}
+
+.contact {
+    justify-self: end; /* Alinha a seção de contato à direita */
+    text-align: right;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+.contact a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact a:hover {
+    color: #4B0082;
+}
+
+/* styles/globals.css */
+
+.btn-roxo {
+    background-color: #6f42c1; /* Cor roxa */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Padding para aumentar a área clicável */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.btn-roxo:hover {
+    background-color: #5a32a1; /* Cor roxa mais escura ao passar o mouse */
+}
+
+.btn-amarelo {
+    background-color: #ffc107; /* Cor amarela */
+    color: black; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Padding para aumentar a área clicável */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.btn-amarelo:hover {
+    background-color: #e0a800; /* Cor amarela mais escura ao passar o mouse */
+}
